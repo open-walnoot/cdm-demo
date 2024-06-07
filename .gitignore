@@ -1,2 +1,5 @@
 # Project exclude paths
 /solutions/cdmDemo.java/classes_gen/
+.~lock.*
+/packages/**
+/solutions/cdmDemo.java/**

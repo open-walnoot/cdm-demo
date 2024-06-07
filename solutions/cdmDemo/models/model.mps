@@ -71,7 +71,9 @@
         <child id="8621213489606450766" name="arguments" index="2FqeQN" />
       </concept>
       <concept id="4918017609134236317" name="cdm.lang.structure.App" flags="ng" index="FNULC">
+        <property id="5134541332515209767" name="formFile" index="mocK4" />
         <property id="4918017609134256277" name="imageId" index="FO7Tw" />
+        <property id="8049620021788948996" name="appDebug" index="2SbWj6" />
       </concept>
       <concept id="4918017609134236440" name="cdm.lang.structure.IDeployable" flags="ngI" index="FNURH">
         <property id="4918017609155931751" name="version" index="OAE2i" />
@@ -79,7 +81,8 @@
       <concept id="4856150046176902197" name="cdm.lang.structure.ObjectTableReference" flags="ng" index="2HeBU9">
         <reference id="4856150046176902198" name="objectTable" index="2HeBUa" />
       </concept>
-      <concept id="5829212302460642922" name="cdm.lang.structure.WithFollowingIdentity" flags="ngI" index="Kpmfu">
+      <concept id="5829212302460642922" name="cdm.lang.structure.WithIdentity" flags="ngI" index="Kpmfu">
+        <property id="2762796752832226804" name="techIdentity" index="pvozQ" />
         <property id="5829212302460642935" name="identity" index="Kpmf3" />
         <property id="8197541140659606363" name="identityFollowsName" index="1pqhtB" />
       </concept>
@@ -134,7 +137,9 @@
         <child id="3523973870520985070" name="expression" index="1eNGTY" />
       </concept>
       <concept id="5384265730003489074" name="cdm.lang.structure.ListLiteral" flags="ng" index="3f$x0l" />
-      <concept id="5384265730003117190" name="cdm.lang.structure.StringLiteral" flags="ng" index="3fBumx" />
+      <concept id="5384265730003117190" name="cdm.lang.structure.StringLiteral" flags="ng" index="3fBumx">
+        <property id="5384265730003117191" name="value" index="3fBumw" />
+      </concept>
       <concept id="5384265730003247831" name="cdm.lang.structure.This" flags="ng" index="3fBYfK" />
       <concept id="5384265730002319530" name="cdm.lang.structure.PropertyCall" flags="ng" index="3fC3Ad">
         <reference id="5384265730002319533" name="property" index="3fC3Aa" />
@@ -171,9 +176,9 @@
   <node concept="269stn" id="5HyT84yHI3O">
     <property role="1k8oJe" value="0" />
     <property role="TrG5h" value="cdm-demo" />
-    <property role="OAE2i" value="1.0" />
+    <property role="OAE2i" value="1.5" />
     <property role="3iPMxs" value="model.RST__cdm_2d_demo" />
-    <property role="3ifvYt" value="57120" />
+    <property role="3ifvYt" value="57114" />
     <property role="38KA4Y" value="model.APP__cdm_2d_demo" />
     <node concept="22salB" id="7lRr44uuSnn" role="22salX">
       <ref role="22salS" node="5HyT84yHI3P" resolve="cdm-demo" />
@@ -231,6 +236,9 @@
       <node concept="3tLvEa" id="7lRr44uu_EP" role="3tLvEb">
         <ref role="3tLvDH" node="7lRr44uu__6" resolve="avarageBMI" />
       </node>
+      <node concept="3tLvEa" id="6YPZGbn$2G0" role="3tLvEb">
+        <ref role="3tLvDH" node="5HyT84yHI3W" resolve="name" />
+      </node>
     </node>
     <node concept="2HeBU9" id="7lRr44uu_Fs" role="2HeBD$">
       <ref role="2HeBUa" node="39fLT_Z6kGD" resolve="Bmi-classes" />
@@ -238,15 +246,20 @@
     <node concept="3bjFja" id="7lRr44uvsoI" role="3ljKQ0">
       <ref role="3bjFjK" node="7lRr44uu__N" resolve="T1" />
     </node>
+    <node concept="3bjFja" id="6YPZGbn_D2v" role="3ljKQ0">
+      <ref role="3bjFjK" node="6YPZGbn$NEO" resolve="test-941347010" />
+    </node>
   </node>
   <node concept="1eKxZv" id="5HyT84yHI3S">
     <property role="1pqhtB" value="true" />
     <property role="TrG5h" value="Group" />
     <property role="Kpmf3" value="Group" />
+    <property role="pvozQ" value="[Iu576rusb0H]" />
     <node concept="1eKvlY" id="5HyT84yHI3W" role="1eKvlx">
       <property role="TrG5h" value="name" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Group.name" />
+      <property role="pvozQ" value="[Mu576rusb0H]" />
       <node concept="18$Bil" id="5HyT84yHI3Z" role="3egi_F">
         <ref role="18$Bim" to="58bx:33BET1Y9RYo" resolve="String" />
       </node>
@@ -256,6 +269,7 @@
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Group.members" />
       <property role="1eKdgK" value="true" />
+      <property role="pvozQ" value="[BHCYQxrEyTE]" />
       <ref role="1eKdgd" node="7lRr44uu_AW" resolve="group" />
       <node concept="2ZMt1D" id="7lRr44uu_G2" role="2YxCKH">
         <ref role="2ZMt1Q" node="7lRr44uurAz" resolve="Group-calc" />
@@ -272,6 +286,7 @@
       <property role="TrG5h" value="numUnderweight" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Group.numUnderweight" />
+      <property role="pvozQ" value="[TRCoBIQzQFK]" />
       <node concept="2ZMt1D" id="7lRr44uu_Hk" role="2YxCK$">
         <ref role="2ZMt1Q" node="7lRr44uurAz" resolve="Group-calc" />
       </node>
@@ -283,6 +298,7 @@
       <property role="TrG5h" value="numNormal" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Group.numNormal" />
+      <property role="pvozQ" value="[BSCoBIQzQFK]" />
       <node concept="2ZMt1D" id="7lRr44uu_JR" role="2YxCK$">
         <ref role="2ZMt1Q" node="7lRr44uurAz" resolve="Group-calc" />
       </node>
@@ -294,6 +310,7 @@
       <property role="TrG5h" value="numOverweight" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Group.numOverweight" />
+      <property role="pvozQ" value="[hSCoBIQzQFK]" />
       <node concept="2ZMt1D" id="7lRr44uu_K3" role="2YxCK$">
         <ref role="2ZMt1Q" node="7lRr44uurAz" resolve="Group-calc" />
       </node>
@@ -305,6 +322,7 @@
       <property role="TrG5h" value="numObese" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Group.numObese" />
+      <property role="pvozQ" value="[PTCoBIQzQFK]" />
       <node concept="2ZMt1D" id="7lRr44uu_Kg" role="2YxCK$">
         <ref role="2ZMt1Q" node="7lRr44uurAz" resolve="Group-calc" />
       </node>
@@ -314,9 +332,10 @@
     </node>
     <node concept="2ZqvqY" id="7lRr44uu_$x" role="1eKvlx" />
     <node concept="1eKvlY" id="7lRr44uu__6" role="1eKvlx">
-      <property role="TrG5h" value="avarageBMI" />
+      <property role="TrG5h" value="averageBMI" />
       <property role="1pqhtB" value="true" />
-      <property role="Kpmf3" value="Group.avarageBMI" />
+      <property role="Kpmf3" value="Group.averageBMI" />
+      <property role="pvozQ" value="[WUCoBIQzQFK]" />
       <node concept="2ZMt1D" id="7lRr44uu_Kx" role="2YxCK$">
         <ref role="2ZMt1Q" node="7lRr44uurAz" resolve="Group-calc" />
       </node>
@@ -332,6 +351,7 @@
     <property role="1pqhtB" value="true" />
     <property role="TrG5h" value="Person" />
     <property role="Kpmf3" value="Person" />
+    <property role="pvozQ" value="[iHCYQxrEyTE]" />
     <node concept="18$Bil" id="39fLT_Z6sI6" role="n_t83">
       <ref role="18$Bim" to="58bx:1EBvAHKt3VV" resolve="Object" />
     </node>
@@ -339,6 +359,7 @@
       <property role="TrG5h" value="name" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Person.name" />
+      <property role="pvozQ" value="[mHCYQxrEyTE]" />
       <node concept="18$Bil" id="39fLT_Z6kF3" role="3egi_F">
         <ref role="18$Bim" to="58bx:33BET1Y9RYo" resolve="String" />
       </node>
@@ -347,6 +368,7 @@
       <property role="TrG5h" value="group" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Person.group" />
+      <property role="pvozQ" value="[QWCoBIQzQFK]" />
       <ref role="1eKdgd" node="39fLT_Z6kEr" resolve="members" />
       <node concept="18$Bil" id="7lRr44uu_Bo" role="3egi_F">
         <ref role="18$Bim" node="5HyT84yHI3S" resolve="Group" />
@@ -356,6 +378,7 @@
       <property role="TrG5h" value="height-m" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Person.height-m" />
+      <property role="pvozQ" value="[xHCYQxrEyTE]" />
       <node concept="2ZMt1D" id="7lRr44uur_8" role="2YxCKH">
         <ref role="2ZMt1Q" node="7lRr44uuiZk" resolve="person calcs" />
       </node>
@@ -367,6 +390,7 @@
       <property role="TrG5h" value="weight-kg" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Person.weight-kg" />
+      <property role="pvozQ" value="[CICYQxrEyTE]" />
       <node concept="2ZMt1D" id="7lRr44uur$M" role="2YxCKH">
         <ref role="2ZMt1Q" node="7lRr44uuiZk" resolve="person calcs" />
       </node>
@@ -379,6 +403,7 @@
       <property role="TrG5h" value="BMI" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Person.BMI" />
+      <property role="pvozQ" value="[uICYQxrEyTE]" />
       <node concept="2ZMt1D" id="7lRr44uu_MV" role="2YxCKH">
         <ref role="2ZMt1Q" node="7lRr44uurAz" resolve="Group-calc" />
       </node>
@@ -396,6 +421,7 @@
       <property role="TrG5h" value="class" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Person.class" />
+      <property role="pvozQ" value="[HJCYQxrEyTE]" />
       <node concept="2ZMt1D" id="7lRr44uu_Gp" role="2YxCKH">
         <ref role="2ZMt1Q" node="7lRr44uurAz" resolve="Group-calc" />
       </node>
@@ -411,6 +437,7 @@
     <property role="1pqhtB" value="true" />
     <property role="TrG5h" value="bmi-classes" />
     <property role="Kpmf3" value="bmi-classes" />
+    <property role="pvozQ" value="[TJCYQxrEyTE]" />
     <ref role="2EzfPb" node="39fLT_Z6kGE" resolve="Bmi-class" />
     <node concept="2Ezeut" id="39fLT_Z6sI2" role="2EzfOj">
       <ref role="2Ezeus" to="58bx:39mK9B0Vi1$" resolve="id" />
@@ -514,10 +541,12 @@
     <property role="1pqhtB" value="true" />
     <property role="TrG5h" value="Bmi-class" />
     <property role="Kpmf3" value="Bmi-class" />
+    <property role="pvozQ" value="[UJCYQxrEyTE]" />
     <node concept="1eKvlY" id="39fLT_Z6tfW" role="1eKvlx">
       <property role="TrG5h" value="low" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Bmi-class.low" />
+      <property role="pvozQ" value="[QQLYQxrEyTE]" />
       <node concept="2ZMt1D" id="7lRr44uuShT" role="2YxCKH">
         <ref role="2ZMt1Q" node="7lRr44uuShu" resolve="Person-calc" />
       </node>
@@ -529,6 +558,7 @@
       <property role="TrG5h" value="high" />
       <property role="1pqhtB" value="true" />
       <property role="Kpmf3" value="Bmi-class.high" />
+      <property role="pvozQ" value="[DZLYQxrEyTE]" />
       <node concept="2ZMt1D" id="7lRr44uuShU" role="2YxCKH">
         <ref role="2ZMt1Q" node="7lRr44uuShu" resolve="Person-calc" />
       </node>
@@ -741,7 +771,9 @@
             </node>
             <node concept="2EzfPm" id="7lRr44uuRIa" role="2EzfPk">
               <ref role="2EzfPh" node="39fLT_Z6kF0" resolve="name" />
-              <node concept="1DtBZD" id="7lRr44uuSjY" role="2Ezeth" />
+              <node concept="3fBumx" id="6YPZGbnymIK" role="2Ezeth">
+                <property role="3fBumw" value="aap" />
+              </node>
             </node>
             <node concept="2EzfPm" id="7lRr44uuRIc" role="2EzfPk">
               <ref role="2EzfPh" node="39fLT_Z6kFb" resolve="height-m" />
@@ -789,7 +821,9 @@
             </node>
             <node concept="2EzfPm" id="7lRr44uuS3q" role="2EzfPk">
               <ref role="2EzfPh" node="39fLT_Z6kF0" resolve="name" />
-              <node concept="1DtBZD" id="7lRr44uuSjZ" role="2Ezeth" />
+              <node concept="3fBumx" id="6YPZGbnymQo" role="2Ezeth">
+                <property role="3fBumw" value="noot" />
+              </node>
             </node>
             <node concept="2EzfPm" id="7lRr44uuS3r" role="2EzfPk">
               <ref role="2EzfPh" node="39fLT_Z6kFb" resolve="height-m" />
@@ -837,7 +871,9 @@
             </node>
             <node concept="2EzfPm" id="7lRr44uuS7j" role="2EzfPk">
               <ref role="2EzfPh" node="39fLT_Z6kF0" resolve="name" />
-              <node concept="1DtBZD" id="7lRr44uuSjW" role="2Ezeth" />
+              <node concept="3fBumx" id="6YPZGbnymY0" role="2Ezeth">
+                <property role="3fBumw" value="mies" />
+              </node>
             </node>
             <node concept="2EzfPm" id="7lRr44uuS7k" role="2EzfPk">
               <ref role="2EzfPh" node="39fLT_Z6kFb" resolve="height-m" />
@@ -885,7 +921,9 @@
             </node>
             <node concept="2EzfPm" id="7lRr44uuS9K" role="2EzfPk">
               <ref role="2EzfPh" node="39fLT_Z6kF0" resolve="name" />
-              <node concept="1DtBZD" id="7lRr44uuSjU" role="2Ezeth" />
+              <node concept="3fBumx" id="6YPZGbnyn8a" role="2Ezeth">
+                <property role="3fBumw" value="boer" />
+              </node>
             </node>
             <node concept="2EzfPm" id="7lRr44uuS9L" role="2EzfPk">
               <ref role="2EzfPh" node="39fLT_Z6kFb" resolve="height-m" />
@@ -1025,8 +1063,79 @@
   </node>
   <node concept="FNULC" id="7lRr44uvR_6">
     <property role="TrG5h" value="cdm-demo" />
-    <property role="OAE2i" value="1.0" />
-    <property role="FO7Tw" value="54673a8170f631d1d69b38cb139a5e4309d02655" />
+    <property role="OAE2i" value="1.5" />
+    <property role="FO7Tw" value="ebeb9d5f3a0b9683f063e40f30081323be9271ed" />
+    <property role="2SbWj6" value="true" />
+    <property role="mocK4" value="cdm-demo-cdfe-tid.xlsx" />
+  </node>
+  <node concept="2EzfPp" id="6YPZGbn$NEO">
+    <property role="TrG5h" value="test-941347010" />
+    <ref role="2EzfPj" node="5HyT84yHI3S" resolve="Group" />
+    <ref role="1xUG9k" node="5HyT84yHI3P" resolve="bmis" />
+    <node concept="2EzfPm" id="6YPZGbn$NFl" role="2EzfPk">
+      <ref role="2EzfPh" to="58bx:39mK9B0Vi1$" resolve="id" />
+      <node concept="asc1O" id="6YPZGbn$NFm" role="2Ezeth">
+        <property role="asc1R" value="test-941347010" />
+      </node>
+    </node>
+    <node concept="2EzfPm" id="6YPZGbn$NWL" role="2EzfPk">
+      <ref role="2EzfPh" node="5HyT84yHI3W" resolve="name" />
+      <node concept="3fBumx" id="6YPZGbn$NWP" role="2Ezeth">
+        <property role="3fBumw" value="qqq" />
+      </node>
+    </node>
+    <node concept="2EzfPm" id="6YPZGbn$NWQ" role="2EzfPk">
+      <ref role="2EzfPh" node="39fLT_Z6kEr" resolve="members" />
+      <node concept="3f$x0l" id="6YPZGbn$NWS" role="2Ezeth" />
+    </node>
+    <node concept="2EzfPm" id="6YPZGbn$NWR" role="2EzfPk">
+      <ref role="2EzfPh" node="7lRr44uu_y9" resolve="numUnderweight" />
+      <node concept="3uZZn6" id="6YPZGbn$O4_" role="WL0qH">
+        <ref role="3zXCHX" node="6YPZGbn$NEO" resolve="test-941347010" />
+        <ref role="3uZZnp" node="7lRr44uurAC" />
+      </node>
+      <node concept="2XkdlR" id="6YPZGbn$NWM" role="2Ezeth">
+        <property role="2XkdlQ" value="0" />
+      </node>
+    </node>
+    <node concept="2EzfPm" id="6YPZGbn$NWT" role="2EzfPk">
+      <ref role="2EzfPh" node="7lRr44uu_yP" resolve="numNormal" />
+      <node concept="3uZZn6" id="6YPZGbn$O4$" role="WL0qH">
+        <ref role="3zXCHX" node="6YPZGbn$NEO" resolve="test-941347010" />
+        <ref role="3uZZnp" node="7lRr44uu_HS" />
+      </node>
+      <node concept="2XkdlR" id="6YPZGbn$NX2" role="2Ezeth">
+        <property role="2XkdlQ" value="0" />
+      </node>
+    </node>
+    <node concept="2EzfPm" id="6YPZGbn$NX6" role="2EzfPk">
+      <ref role="2EzfPh" node="7lRr44uu_zl" resolve="numOverweight" />
+      <node concept="3uZZn6" id="6YPZGbn$O4A" role="WL0qH">
+        <ref role="3zXCHX" node="6YPZGbn$NEO" resolve="test-941347010" />
+        <ref role="3uZZnp" node="7lRr44uu_Iq" />
+      </node>
+      <node concept="2XkdlR" id="6YPZGbn$NX5" role="2Ezeth">
+        <property role="2XkdlQ" value="0" />
+      </node>
+    </node>
+    <node concept="2EzfPm" id="6YPZGbn$NX4" role="2EzfPk">
+      <ref role="2EzfPh" node="7lRr44uu_$1" resolve="numObese" />
+      <node concept="3uZZn6" id="6YPZGbn$O4B" role="WL0qH">
+        <ref role="3zXCHX" node="6YPZGbn$NEO" resolve="test-941347010" />
+        <ref role="3uZZnp" node="7lRr44uu_IX" />
+      </node>
+      <node concept="2XkdlR" id="6YPZGbn$NX3" role="2Ezeth">
+        <property role="2XkdlQ" value="0" />
+      </node>
+    </node>
+    <node concept="2EzfPm" id="6YPZGbn$NX1" role="2EzfPk">
+      <ref role="2EzfPh" node="7lRr44uu__6" resolve="avarageBMI" />
+      <node concept="3uZZn6" id="6YPZGbn$NX7" role="WL0qH">
+        <ref role="3zXCHX" node="6YPZGbn$NEO" resolve="test-941347010" />
+        <ref role="3uZZnp" node="7lRr44uu_J$" />
+      </node>
+      <node concept="1DtBZD" id="6YPZGbn$Qr0" role="2Ezeth" />
+    </node>
   </node>
 </model>
 
