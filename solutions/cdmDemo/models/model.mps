@@ -20,10 +20,12 @@
         <reference id="2060799974998395856" name="scope" index="22salS" />
       </concept>
       <concept id="1331353977788050484" name="cdm.lang.structure.Service" flags="ng" index="269stn">
+        <property id="3681731848808870795" name="readableJson" index="HpD0n" />
         <property id="246419057625601517" name="startClassName" index="38KA4Y" />
         <property id="3155417802600854616" name="port" index="3ifvYt" />
         <property id="8091995323588387459" name="restClassName" index="3iPMxs" />
         <property id="8439313705849584852" name="portOverride" index="1k8oJe" />
+        <property id="1040621453810449692" name="techIds" index="3EtbEI" />
         <child id="2060799974998395861" name="scopes" index="22salX" />
       </concept>
       <concept id="2387291966582922513" name="cdm.lang.structure.ObjectIdLiteral" flags="ng" index="asc1O">
@@ -176,10 +178,12 @@
   <node concept="269stn" id="5HyT84yHI3O">
     <property role="1k8oJe" value="0" />
     <property role="TrG5h" value="cdm-demo" />
-    <property role="OAE2i" value="1.5" />
+    <property role="OAE2i" value="1.6" />
     <property role="3iPMxs" value="model.RST__cdm_2d_demo" />
     <property role="3ifvYt" value="57114" />
     <property role="38KA4Y" value="model.APP__cdm_2d_demo" />
+    <property role="3EtbEI" value="true" />
+    <property role="HpD0n" value="true" />
     <node concept="22salB" id="7lRr44uuSnn" role="22salX">
       <ref role="22salS" node="5HyT84yHI3P" resolve="cdm-demo" />
     </node>
@@ -1063,8 +1067,8 @@
   </node>
   <node concept="FNULC" id="7lRr44uvR_6">
     <property role="TrG5h" value="cdm-demo" />
-    <property role="OAE2i" value="1.5" />
-    <property role="FO7Tw" value="ebeb9d5f3a0b9683f063e40f30081323be9271ed" />
+    <property role="OAE2i" value="1.6" />
+    <property role="FO7Tw" value="ba8a74b27a6252538609652bcdfe0406eb2c0a12" />
     <property role="2SbWj6" value="true" />
     <property role="mocK4" value="cdm-demo-cdfe-tid.xlsx" />
   </node>
