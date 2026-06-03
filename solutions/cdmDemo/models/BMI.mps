@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ea6cda72-b7f8-4b19-adc8-8571e4a874f8(model)">
+<model ref="r:ea6cda72-b7f8-4b19-adc8-8571e4a874f8(BMI)">
   <persistence version="9" />
   <languages>
     <devkit ref="259f22a2-e06a-49cb-b9fd-3b4617386159(cdm.lang.devkit)" />
@@ -10,6 +10,9 @@
   </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -160,9 +163,9 @@
     <property role="1k8oJe" value="0" />
     <property role="TrG5h" value="cdm-demo" />
     <property role="OAE2i" value="1.6" />
-    <property role="3iPMxs" value="model.RST__cdm_2d_demo" />
+    <property role="3iPMxs" value="BMI.RST__cdm_2d_demo" />
     <property role="3ifvYt" value="57114" />
-    <property role="38KA4Y" value="model.APP__cdm_2d_demo" />
+    <property role="38KA4Y" value="BMI.APP__cdm_2d_demo" />
     <property role="3EtbEI" value="true" />
     <property role="HpD0n" value="true" />
     <node concept="22salB" id="7lRr44uuSnn" role="22salX">
@@ -241,6 +244,7 @@
     <property role="TrG5h" value="Group" />
     <property role="Kpmf3" value="Group" />
     <property role="pvozQ" value="[Iu576rusb0H]" />
+    <property role="3GE5qa" value="concepten" />
     <node concept="1eKvlY" id="5HyT84yHI3W" role="1eKvlx">
       <property role="TrG5h" value="name" />
       <property role="1pqhtB" value="true" />
@@ -320,6 +324,7 @@
     <property role="TrG5h" value="Person" />
     <property role="Kpmf3" value="Person" />
     <property role="pvozQ" value="[iHCYQxrEyTE]" />
+    <property role="3GE5qa" value="concepten" />
     <node concept="18$Bil" id="39fLT_Z6sI6" role="n_t83">
       <ref role="18$Bim" to="58bx:1EBvAHKt3VV" resolve="Object" />
     </node>
@@ -485,6 +490,7 @@
     <property role="TrG5h" value="Bmi-class" />
     <property role="Kpmf3" value="Bmi-class" />
     <property role="pvozQ" value="[UJCYQxrEyTE]" />
+    <property role="3GE5qa" value="concepten" />
     <node concept="1eKvlY" id="39fLT_Z6tfW" role="1eKvlx">
       <property role="TrG5h" value="low" />
       <property role="1pqhtB" value="true" />
@@ -540,7 +546,7 @@
     </node>
   </node>
   <node concept="1eNGT5" id="7lRr44uurAz">
-    <property role="TrG5h" value="Group-calc" />
+    <property role="TrG5h" value="Group-statistics" />
     <ref role="3fwaAx" node="5HyT84yHI3S" resolve="Group" />
     <node concept="1eNGT8" id="7lRr44uurAA" role="1eNGTS">
       <node concept="1eNGTK" id="7lRr44uurAC" role="1eNGTL">
@@ -755,7 +761,9 @@
         </node>
         <node concept="2EzfPm" id="7lRr44uu__X" role="2EzfPk">
           <ref role="2EzfPh" node="5HyT84yHI3W" resolve="name" />
-          <node concept="3fBumx" id="7lRr44uu__Y" role="2Ezeth" />
+          <node concept="3fBumx" id="7lRr44uu__Y" role="2Ezeth">
+            <property role="3fBumw" value="1st cohort" />
+          </node>
         </node>
         <node concept="2EzfPm" id="7lRr44uu_Ag" role="2EzfPk">
           <ref role="2EzfPh" node="39fLT_Z6kEr" resolve="members" />
@@ -862,7 +870,9 @@
         </node>
         <node concept="2EzfPm" id="1YQDqtbJN1z" role="2EzfPk">
           <ref role="2EzfPh" node="5HyT84yHI3W" resolve="name" />
-          <node concept="3fBumx" id="1YQDqtbJN1$" role="2Ezeth" />
+          <node concept="3fBumx" id="370Aa1qYCXW" role="2Ezeth">
+            <property role="3fBumw" value="1st cohort" />
+          </node>
         </node>
       </node>
     </node>
