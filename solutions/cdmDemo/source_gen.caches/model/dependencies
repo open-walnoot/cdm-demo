@@ -2,6 +2,7 @@
 <dependenciesRoot>
   <uses language="l:2b379ad1-c243-479c-be1a-0c81bd5ce136:cdm.lang" />
   <uses module="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" kind="dp" />
+  <uses module="ce36526d-d793-4b8b-88e9-d1815f616441(DclareGui)" kind="dp" />
   <uses module="55d6b6f5-8095-4cd0-a39b-779da8d12940(DclareMPSRuntime)" kind="dp" />
   <uses module="e584ff77-930e-4637-8df0-b4c8d3b6de91(DclareRuntime)" kind="dp" />
   <uses module="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt+dp" />
@@ -19,6 +20,7 @@
   <uses module="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" kind="dp" />
   <uses module="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="dp" />
   <uses module="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="dp" />
+  <uses module="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="dp" />
   <uses module="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" kind="dp" />
 </dependenciesRoot>
 
