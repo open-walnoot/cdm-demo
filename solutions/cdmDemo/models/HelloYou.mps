@@ -2,8 +2,7 @@
 <model ref="r:0addd6e9-b6c2-4ae1-90f1-dbf447364126(HelloYou)">
   <persistence version="9" />
   <languages>
-    <devkit ref="259f22a2-e06a-49cb-b9fd-3b4617386159(cdm.lang.devkit)" />
-    <devkit ref="9ada7abf-95fd-41ae-ad32-18ecdf136591(cdm.generator.devkit)" />
+    <use id="2b379ad1-c243-479c-be1a-0c81bd5ce136" name="cdm.lang" version="17" />
   </languages>
   <imports>
     <import index="58bx" ref="r:4a1209c4-c885-4c56-9c3d-054c2c3812b3(cdmbase)" implicit="true" />
@@ -132,13 +131,13 @@
     <property role="TrG5h" value="setMessage" />
     <ref role="3fwaAx" node="1YQDqtbJ_kY" resolve="messenger" />
     <node concept="1eNGTd" id="1YQDqtbJCTB" role="1eNGTP">
-      <node concept="3fC3Ad" id="1YQDqtbJCTF" role="3fw9hm">
+      <node concept="3fC3Ad" id="Keq9FYLJsR" role="3fw9hm">
         <ref role="3fC3Aa" node="1YQDqtbJ_l2" resolve="name" />
       </node>
     </node>
     <node concept="1eNGTd" id="1YQDqtbJCTC" role="1eNGTP">
       <property role="1eNGTW" value="true" />
-      <node concept="3fC3Ad" id="1YQDqtbJCTO" role="3fw9hm">
+      <node concept="3fC3Ad" id="Keq9FYLJsT" role="3fw9hm">
         <ref role="3fC3Aa" node="1YQDqtbJCT2" resolve="message" />
       </node>
     </node>
